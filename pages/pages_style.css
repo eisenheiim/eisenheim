@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  scroll-behavior: smooth;
+  font-family: "Poppins";
+}
+:root {
+  --bg-color: #908585;
+  --second-bg-color: #101010;
+  --text-color: white;
+  --main-color: #b4ada7;
+}
+html {
+  font-size: 60%;
+  overflow-x: hidden; /*provides from overflowing. scrollbar falan cıkmaz tasan ıcerık kesılır*/
+}
+
+body{
+  background-color: var(--bg-color);
+  color:var(--text-color)
+}
+
+.comb img{
+    
+  max-width:300px;
+  border-radius: 10%;
+  object-fit: cover;
+}
+.comb{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--bg-color);
+  gap:2rem;
+ padding:5rem 5rem;
+ margin:3rem;
+
+ overflow:hidden;
+  border-radius: 3rem;
+  cursor:pointer;
+  border:2px solid var(--main-color); /* boyle hover over olunca sadece renk degistircek*/
+  transition:0.3s ease-in-out;
+}
+
+.comb h4{
+    color:#403939;
+    font-size: 3rem;
+}
+.comb p{
+    color:#403939;
+    font-size:18px;
+    margin:10px 12px;
+}
